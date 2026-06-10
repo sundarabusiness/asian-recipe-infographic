@@ -1,0 +1,21 @@
+{
+  "_about": "Ingredient term glossary for multilingual recipe output. The host AI translates prose; these terms are looked up, not translated, because ingredient names are where machine translation fails quietly.",
+  "_review_process": "Every entry starts as pending_family_review. A term is only marked verified after a native speaker in the family confirms it. The family is the authority, not the model.",
+  "_languages": { "en": "English", "lo": "Lao", "vi": "Vietnamese" },
+  "terms": [
+    { "en": "fish sauce",          "lo": "ນ້ຳປາ",      "lo_roman": "nam pa",     "vi": "nước mắm",     "status": "pending_family_review" },
+    { "en": "padek (fermented fish sauce)", "lo": "ປາແດກ", "lo_roman": "padek",  "vi": "mắm cá",       "status": "pending_family_review" },
+    { "en": "sticky rice",         "lo": "ເຂົ້າໜຽວ",    "lo_roman": "khao niao", "vi": "gạo nếp",      "status": "pending_family_review" },
+    { "en": "green papaya",        "lo": "ໝາກຫຸ່ງ",     "lo_roman": "mak houng", "vi": "đu đủ xanh",   "status": "pending_family_review" },
+    { "en": "chili",               "lo": "ໝາກເຜັດ",     "lo_roman": "mak phet",  "vi": "ớt",           "status": "pending_family_review" },
+    { "en": "lime",                "lo": "ໝາກນາວ",     "lo_roman": "mak nao",   "vi": "chanh",        "status": "pending_family_review" },
+    { "en": "garlic",              "lo": "ກະທຽມ",      "lo_roman": "kathiam",   "vi": "tỏi",          "status": "pending_family_review" },
+    { "en": "shallot",             "lo": "ຫອມແດງ",     "lo_roman": "hom daeng", "vi": "hành tím",     "status": "pending_family_review" },
+    { "en": "mint",                "lo": "ໃບຫອມລາບ",   "lo_roman": "bai hom lap", "vi": "rau bạc hà", "status": "pending_family_review" },
+    { "en": "cilantro",            "lo": "ຜັກຫອມປ້ອມ",  "lo_roman": "phak hom pom", "vi": "rau mùi",  "status": "pending_family_review" },
+    { "en": "pork belly",          "lo": "ຊີ້ນໝູສາມຊັ້ນ", "lo_roman": "sin mu sam san", "vi": "thịt ba chỉ", "status": "pending_family_review" },
+    { "en": "toasted rice powder", "lo": "ເຂົ້າຄົ່ວ",     "lo_roman": "khao khua", "vi": "thính gạo",   "status": "pending_family_review" },
+    { "en": "palm sugar",          "lo": "ນ້ຳຕານປຶກ",   "lo_roman": "nam tan puk", "vi": "đường thốt nốt", "status": "pending_family_review" },
+    { "en": "MSG",                 "lo": "ແປ້ງນົວ",     "lo_roman": "paeng nua", "vi": "bột ngọt",     "status": "pending_family_review" }
+  ]
+}

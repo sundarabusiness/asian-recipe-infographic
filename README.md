@@ -62,6 +62,7 @@ The skill body is plain Markdown with YAML frontmatter — the only environment-
 
 ## Roadmap
 
+- [ ] **Multilingual output — in progress.** Any dish, any language: same recipe renders for the grandmother in Lao and the grandkid in English. Spec and glossary at [docs/localization-spec.md](docs/localization-spec.md); v1 set is English, Lao, Vietnamese
 - [ ] Sample outputs for 5–10 dishes in `examples/`
 - [ ] Direct image-API integration (scripted generation instead of in-environment tool call)
 - [ ] Optional nutrition info section

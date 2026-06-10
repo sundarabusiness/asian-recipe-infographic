@@ -1,0 +1,16 @@
+{
+  "_about": "Measurement conventions per output language. English keeps kitchen units; Lao and Vietnamese output uses metric, which is how those kitchens actually measure when they measure at all.",
+  "conversions": {
+    "1 tsp":  "5 ml",
+    "1 tbsp": "15 ml",
+    "1 cup":  "240 ml",
+    "1 lb":   "450 g",
+    "1 oz":   "28 g"
+  },
+  "language_conventions": {
+    "en": { "volume": "tsp/tbsp/cup", "weight": "g (already metric in source recipes)" },
+    "lo": { "volume": "ml, with spoon equivalents in parentheses", "weight": "g" },
+    "vi": { "volume": "ml, with spoon equivalents in parentheses", "weight": "g" }
+  },
+  "verifier_rule": "A localized recipe must not mix unit systems within one ingredient list."
+}
