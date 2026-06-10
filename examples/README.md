@@ -6,6 +6,7 @@ Real outputs from the skill — one folder per dish, each with the Instagram fro
 |---|---|---|
 | Lao Chicken Larb | <img src="chicken-larb/Lao_Chicken_Larb_Front.jpg" width="180" alt="Lao Chicken Larb front image"> | [Lao_Chicken_Larb_Recipe.pdf](chicken-larb/Lao_Chicken_Larb_Recipe.pdf) |
 | Lao Thom Khem | <img src="thom-khem/Thom_Khem_Front.jpg" width="180" alt="Lao Thom Khem front image"> | [Thom_Khem_Recipe.pdf](thom-khem/Thom_Khem_Recipe.pdf) |
+| Beef Pho (cold-start test) | <img src="beef-pho-cold-start/Beef_Pho_Front.jpg" width="180" alt="Beef Pho front image"> | [Beef_Pho_Recipe.md](beef-pho-cold-start/Beef_Pho_Recipe.md) — see [the test](beef-pho-cold-start/README.md) |
 
 Coming next: Tam Mak Houng (green papaya salad). The first run produced a duplicate ingredient line, which is exactly what the verifier layer exists to catch — the regenerated version goes up once it passes.
 
