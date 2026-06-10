@@ -15,6 +15,8 @@ This skill writes the recipes down: quantified for someone learning alone (4 ser
 
 It also explains the verifier layer. A normal recipe can be checked against a book. These can't, because the book doesn't exist. When there is no reference to fact-check against, the validation has to be built into the tool itself.
 
+One more thing the quantities are not: the final word. Every palate is different — some want it spicier, some want double the padek. The numbers here are a safe baseline, because salt you can add at the table but you cannot take back out of the pot. The recipe keeps you from ruining the dish; the tips tell you where to push it. That is also why the verifier rejects large amounts of strong ingredients — a mild baseline is recoverable, an over-salted pot is not.
+
 ## Quick start
 
 Drop [SKILL.md](SKILL.md) into your AI environment's skills directory, then trigger with natural language:
