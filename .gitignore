@@ -9,3 +9,8 @@ Thumbs.db
 # Local scratch
 *.tmp
 scratch/
+
+# Secrets never enter this repo, but if one lands here anyway, it doesn't ship
+.env
+.env.*
+*.key
