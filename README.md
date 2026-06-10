@@ -1,0 +1,68 @@
+# Asian Recipe Infographic
+
+An AI skill that turns any Lao-Viet or Asian dish name into two ready-to-post deliverables:
+
+1. **Instagram front image** — a tall vertical (9:16) visual hook: large appetizing food photo, minimal clean title, built as slide 1 of a carousel.
+2. **PDF recipe document** — a clean, professional multi-page recipe: realistic ingredient quantities (4 servings by default), numbered steps, and a "Lao Tips" adjust-to-taste section.
+
+Built for a working chef's Instagram workflow: post the beautiful image, share the accurate PDF.
+
+## Quick start
+
+Drop [SKILL.md](SKILL.md) into your AI environment's skills directory, then trigger with natural language:
+
+```
+Skill: Asian Recipe Infographic Chicken Larb
+Skill: Asian Recipe Infographic Thom Khem extra spicy
+Skill: Asian Recipe Infographic Banh Bao
+```
+
+You get back one tall vertical image and one `.pdf` recipe file.
+
+## The verifier layer
+
+The most important part of this skill is not the prompt — it's the built-in output validation. Recipe generation is a classic LLM hallucination zone (half-cups of fish sauce, duplicate ingredients, quantities that drift between the image and the document). After multiple rounds of bad outputs, the skill now enforces:
+
+- **4 servings by default** — every quantity anchored to a known serving count
+- **Realistic measurements only** — sanity bounds on strong ingredients (fish sauce, soy sauce, chili)
+- **No duplicate or conflicting ingredients** — one canonical ingredient list
+- **Double-check before generation** — quantities, names, and steps verified before the PDF is rendered
+
+If you adapt this skill, keep the verifier rules. They are the difference between a demo and a tool a chef actually uses.
+
+## Portability
+
+The skill is written to run across AI environments, not locked to one vendor:
+
+| Environment | Image step | PDF step | Status |
+|---|---|---|---|
+| Grok | Grok Imagine | `pdf` skill | Working (origin environment) |
+| Claude | Image tool or prompt handoff | PDF/document skill or Markdown→PDF | Ported by design — see [docs/handoff.md](docs/handoff.md) |
+| Other | Any text-to-image API | Any Markdown→PDF path | Adapt the two tool bindings, keep everything else |
+
+The skill body is plain Markdown with YAML frontmatter — the only environment-specific parts are the two tool bindings (image generation and PDF rendering). Porting means swapping those two lines.
+
+## Repo contents
+
+| Path | What it is |
+|---|---|
+| [SKILL.md](SKILL.md) | The skill — drop-in ready |
+| [docs/handoff.md](docs/handoff.md) | Full project handoff: design decisions, verifier rationale, porting guide |
+| [examples/](examples/) | Sample outputs (front images + recipe PDFs) |
+
+## Roadmap
+
+- [ ] Sample outputs for 5–10 dishes in `examples/`
+- [ ] Direct image-API integration (scripted generation instead of in-environment tool call)
+- [ ] Optional nutrition info section
+- [ ] Finalized PDF layout pass
+- [ ] Emoji policy decision (currently disabled by default — rendering issues in some PDF environments)
+
+## Author
+
+**Bobby Sundara** — AI tools for chef content + Lao-Viet heritage preservation.
+X: [@bobbysundara](https://x.com/bobbysundara)
+
+## License
+
+[MIT](LICENSE)
