@@ -7,6 +7,14 @@ An AI skill that turns any Lao-Viet or Asian dish name into two ready-to-post de
 
 Built for a working chef's Instagram workflow: post the beautiful image, share the accurate PDF.
 
+## Why this exists
+
+There is no cookbook for these dishes. The recipes live with the elders, who cook by taste — ask how much fish sauce goes in and the answer is "I don't know, you taste it." That works standing in a kitchen next to your grandmother. It does not survive distance or generations.
+
+This skill writes the recipes down: quantified for someone learning alone (4 servings, realistic measurements), with the traditional method kept where it belongs — a "Lao Tips" section that ends every recipe the way the elders would: adjust to taste.
+
+It also explains the verifier layer. A normal recipe can be checked against a book. These can't, because the book doesn't exist. When there is no reference to fact-check against, the validation has to be built into the tool itself.
+
 ## Quick start
 
 Drop [SKILL.md](SKILL.md) into your AI environment's skills directory, then trigger with natural language:
